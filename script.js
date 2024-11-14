@@ -21,7 +21,13 @@ function randomColor() {
 }
 
 document.addEventListener("keydown", function(event) {
-    if (event.code === "Space") {
+    const numColors = document.getElementById("numColors").value;
+
+    if (numColors > 20) {
+        alert("You cant enter a number bigger than 20");
+    } else if (numColors <= 0) {
+        alert("You cant enter a number smaller than 0");
+    } else if (event.code === "Space") {
         randomColor();
     }
 });
