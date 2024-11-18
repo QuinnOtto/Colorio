@@ -69,9 +69,9 @@ spaceBetween.addEventListener("change", function() {
     const colors = document.querySelectorAll(".colors");
     colors.forEach(color => {
         if (spaceBetween.checked) {
-            color.style.marginRight = "10px";
+            color.style.border = "4px solid #555";
         } else {
-            color.style.marginRight = "0px";
+            color.style.border = "none";
         }
     });
 });
